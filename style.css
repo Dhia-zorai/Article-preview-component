@@ -24,7 +24,7 @@ main {
   padding: 0;
   max-width: 85vw;
   width: 85%;
-  max-height:100vh;
+  max-height: 100vh;
   height: auto;
   border-radius: 15px;
   margin-bottom: 30%;
@@ -159,14 +159,14 @@ h2 {
     max-width: 733px;
     width: 100%;
     padding: 0;
-    height: 279px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 
   .image {
-    width: 50%;
+    width: 287px;
+
     object-fit: cover;
     border-radius: 15px 0 0 15px;
     min-width: unset;
@@ -176,6 +176,7 @@ h2 {
   .desktop {
     height: auto;
     position: relative;
+    padding: 2rem 2rem 1.5rem 2rem;
   }
 
   .social-icons {
@@ -187,7 +188,7 @@ h2 {
     border-radius: 15px;
     position: absolute;
     top: -8rem;
-    left: 125px;
+    left: 184px;
     max-width: 238px;
     width: auto;
     transition: bottom 0.3s ease-in-out;
