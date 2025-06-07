@@ -13,8 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding: 0;
   font-size: clamp(0.813rem, 0.768rem + 0.188vw, 0.938rem);
-  overflow: hidden;
 }
 
 main {
@@ -23,7 +23,8 @@ main {
   flex-direction: column;
   padding: 0;
   max-width: 85vw;
-  width: 75%;
+  width: 85%;
+  max-height:100vh;
   height: auto;
   border-radius: 15px;
   margin-bottom: 30%;
@@ -31,7 +32,7 @@ main {
 }
 
 main > * + *,
-h1 p {
+p {
   margin-top: 0.5rem;
 }
 
@@ -41,7 +42,7 @@ h1 p {
   border-radius: 15px 15px 0 0;
 }
 .desktop {
-  padding: 2rem;
+  padding: 2rem 2rem 1.5rem 2rem;
   margin: 0;
   position: relative;
 }
@@ -49,6 +50,7 @@ h1 {
   color: var(--Very-Dark-Grayish-Blue);
   font-weight: 700;
   font-size: clamp(1.125rem, 1.081rem + 0.188vw, 1.25rem);
+  margin: 0;
 }
 
 p {
@@ -151,13 +153,13 @@ h2 {
   font-size: clamp(1rem, 0.956rem + 0.188vw, 1.125rem);
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 768px) {
   main {
     margin: 0;
-    max-width: 70vw;
+    max-width: 733px;
     width: 100%;
     padding: 0;
-    height: auto;
+    height: 279px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -172,8 +174,7 @@ h2 {
   }
 
   .desktop {
-    min-height: 100%;
-    padding: 2rem;
+    height: auto;
     position: relative;
   }
 
@@ -186,7 +187,7 @@ h2 {
     border-radius: 15px;
     position: absolute;
     top: -8rem;
-    left: 170px;
+    left: 125px;
     max-width: 238px;
     width: auto;
     transition: bottom 0.3s ease-in-out;
